@@ -1,11 +1,4 @@
-const express = require("express")
-
-const app = express()
-
-app.get('/' , function(req,res){
-    res.send("hello")
-}).listen(8080)
-
-app.get('/file' , function(req,res){
-    req.sendFile(__dirname + "module/1.txt")
-});
+const app = require("./books")
+const app1 = require("./practice/app")
+// app.listen(9000)
+app.listen(9000)
